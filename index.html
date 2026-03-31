@@ -1,441 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Matthew</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="./images/ico/pulixe.svg" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matiwos Teferi | Full-Stack Developer</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
+
+  <!-- Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
+
 <body>
-<!-- ////////////////////////////////////////////////////////////////////////////////////////
-                               START SECTION 1 - THE NAVBAR SECTION  
-/////////////////////////////////////////////////////////////////////////////////////////////-->
-<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="">
-        <h1>Matthew</h1>
-       <!-- <img src="images/logo.png" alt="logo image"> -->
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#campanies">Personal Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>         
-          <li class="nav-item"><a class="nav-link" href="#contact">contact</a>
-          </li>
-        </ul>
-       <button type="button" class="rounded-pill btn-rounded">
-          +251910504252
-          <span>
-            <a href="https://api.whatsapp.com/send?phone=+251910504252"> <i class="fas fa-phone-alt"></i></a>
-          </span>
-        </button>
-      </div>
+
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="scanner"></div>
+    <div class="loading-text">INITIALIZING SYSTEM...</div>
+  </div>
+
+  <!-- Fixed UI Elements -->
+  <nav class="fixed-nav">
+    <div class="logo">MATIWOS</div>
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+    <div class="nav-links">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Me</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#portfolio" class="nav-link">My Projects</a>
+      <a href="#contact" class="glitch-btn">CONTACT_ME</a>
     </div>
   </nav>
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                            START SECTION 2 - THE INTRO SECTION  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <!-- Background Elements -->
+  <div class="stars"></div>
+  <div class="grid-floor"></div>
 
-<section id="home" class="intro-section">
-  <div class="container">
-    <div class="row align-items-center text-white">
-      <!-- START THE CONTENT FOR THE INTRO  -->
-      <div class="col-md-6 intros text-start">
-        <h1 class="display-2">
-          <span class="display-2--intro">Hi, I'm Matthew Teferi</span>
-          <span class="display-2--intro"><h2>Full-Stack Developer</h2></span>
-          <span class="display-2--description lh-base">
-            <em><strong>Developer</strong></em><br>Crafting digital experiences from front-end to back-end, specializing in modern web technologies and scalable solution.<br><br>Here you can know more about me.
-          </span>
-        </h1>
-        <a href = "https://flowcv.com/resume/9c9sqeejwcwg"
-          Download = "https://flowcv.com/resume/9c9sqeejwcwg">
-        <button type="button" class="rounded-pill btn-rounded">Download My CV
-          <span><i class="fas fa-arrow-right"></i></span>
-        </button></a>
-      </div>
-      <div class="col-md-6">
-        <model-viewer id="modelviewer" interpolation-decay="200" alt="Ready Player Me Avatar" autoplay ar ar-modes="webxr scene-viewer" scale="1 1 1"
-        src="./assets/3d/pulixeIdleaniamtion.gltf"  shadow-intensity="1" >
-    </model-viewer>
-      </div> 
-    </div>
-  </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</section>
-  <section id="campanies" class="campanies">
-    <div class="container">
-      <div class="row text-center">
-        <h4 class="fw-bold lead mb-3">Personal Skills</h4>
-        <div class="heading-line mb-5"></div>
-      </div>
-    </div>
-    <!-- Start technologies Content  -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-1.png" alt="Campany 1 logo" title="Campany 1 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-2.png" alt="Campany 2 logo" title="Campany 2 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="Campany 3 logo" title="Campany 3 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="https://www.vectorlogo.zone/logos/github/github-ar21.svg" alt="Campany 4 logo" title="Campany 4 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/campany-5.png" alt="Campany 5 logo" title="Campany 5 Logo" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-2">
-          <div class="campanies__logo-box shadow-sm">
-            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="Campany 6 logo" title="Campany 6 Logo" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Vertical Scroll Wrapper -->
+  <div class="vertical-container">
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                       START SECTION 6 - THE FAQ 
-//////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="faq" class="faq">
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 fw-bold text-uppercase">faq</h1>
-      <div class="heading-line"></div>
-      <p class="lead"><code>who am i ?</code></p>
-    </div>
-    <!-- ACCORDION CONTENT  -->
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <div class="accordion" id="accordionExample">
-          <!-- ACCORDION ITEM 1 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                About Me
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ul style="list-style-type:disc;">
-                  <li>I am 21 years old and was born in W/shewa, Oromia.</li>
-                  <li>I enjoy understanding life and seeking the truth, valuing honesty.</li>
-                  <li>I am passionate about music, sports, and travels.</li>
-                  <li>I follow the teachings of Jesus Christ and His message of love and truth.</li>
-                  <li>I enjoy walking in nature, especially in the mornings or evenings.</li>
-                  <li>Practicing sports and maintaining my health is important to me for successfully carrying out my activities.</li>
-                </ul>  
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 2 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Work Ethic
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ul style="list-style-type:disc;">
-                  <li>I am a good employee characterized by my honesty and responsibility in my tasks and the time I dedicate to them.</li>
-                  <li>I focus on improving communication with my team and thoroughly understanding the problems I need to solve.</li>
-                  <li>I am analytical but also outgoing, paying attention to details.</li>
-                  <li>I value overall experience rather than limiting myself to a single aspect as a way to enrich myself professionally.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 3 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Relationships
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ul style="list-style-type:disc;">
-                  <li>Listening to people is a valuable skill for me in my interpersonal relationships.</li>
-                  <li>I practice patience and do not judge people, believing that only God has that right.</li>
-                  <li>I have many friends and find richness in the diversity of people.</li>
-                  <li>I Love Learning new languages with my friends from other Countries!</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-             <!-- ACCORDION ITEM 4 -->
-          <div class="accordion-item shadow mb-3">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                The Student
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <ul style="list-style-type:disc;">
-                  <li>I have a self-directed learning attitude but am also open to learning from others if the information is valuable.</li>
-                  <li>During my time at university, I seized opportunities to connect with people and expand my network of contacts.</li>
-                  <li>I learned study techniques and the importance of networking from individuals I met at university.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
-                              START SECTION 7 - THE PORTFOLIO  
-//////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-<section id="portfolio" class="portfolio">
-  <div class="container">
-    <div class="row text-center mt-5">
-      <h1 class="display-3 fw-bold text-capitalize">Portfolio</h1>
-      <div class="heading-line"></div>
-      <p class="lead">
-        These are the main projects that help build my experience!
-      </p>
-    </div>
-    <!-- FILTER BUTTONS  
-    <div class="row mt-5 mb-4 g-3 text-center">
-      <div class="col-md-12">
-        <button class="btn btn-outline-primary" type="button">All</button>
-        <button class="btn btn-outline-primary" type="button">websites</button>
-        <button class="btn btn-outline-primary" type="button">design</button>
-        <button class="btn btn-outline-primary" type="button">mockup</button>
-      </div>
-    </div>-->
-
-    <!-- START THE PORTFOLIO ITEMS  -->
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <a href="https://github.com/" target="myFrame"><div class="portfolio-box shadow">
-          <img src="https://www.vectorlogo.zone/logos/java/java-ar21.svg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
-          <div class="portfolio-info">
-             <div class="caption">
-              <h4>Java project</h4>
-              <h5>MY SQL</h5>
-            </div>
-          </div>
-        </div></a>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <a href="https://github.com/" target="myFrame"><div class="portfolio-box shadow">
-          <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvfGVufDB8fDB8fHww" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
-          <div class="portfolio-info">
-             <div class="caption">
-              <h4>project W\Java</h4>
-              <h5>MYSQL</h5>
-            </div>
-          </div>
-        </div></a>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <a href="https://github.com/" target="myFrame"><div class="portfolio-box shadow">
-          <img src="https://miro.medium.com/v2/resize:fit:640/1*XzIRJGujfqAiOV2EIQgR_Q.png" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
-          <div class="portfolio-info">
-             <div class="caption">
-              <h4>project Python</h4>
-              <h5>Flask Rest</h5>
-            </div>
-          </div>
-        </div></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-              START SECTION - Contact  
-/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<section id="contact" class="get-started">
-  <div class="container">
-    <div class="row text-center">
-      <h1 class="display-3 fw-bold text-capitalize">Contact</h1>
-      <div class="heading-line"></div>
-    </div>
-
-    <!-- START THE CTA CONTENT  -->
-    <div class="row text-white">
-      <div class="col-12 col-lg-12 bg-white shadow p-3">
-        <div class="form w-100 pb-2">
-          <h4 class="display-3--title mb-5">It's always a pleasure talking with you!</h4>
-          <form action="mailto:francisco.pulice@outlook.com" class="row" method="post" enctype="text/plain">
-            <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg">
-            </div>
-            <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg">
-            </div>
-            <div class="col-lg-12 mb-3">
-              <input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg">
-            </div>
-            <div class="col-lg-12 mb-3">
-              <textarea name="message" placeholder="message" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
-            </div>
-            <div class="text-center d-grid mt-1">
-              <button  type="submit" value="Send" class="btn btn-primary rounded-pill pt-3 pb-3">
-                Submit
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////
-                           START SECTION 9 - THE FOOTER  
-///////////////////////////////////////////////////////////////////////////////////////////////-->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <!-- CONTENT FOR THE MOBILE NUMBER  -->
-      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-        <div class="contact-box__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-            <path d="M15 7a2 2 0 0 1 2 2" />
-            <path d="M15 3a6 6 0 0 1 6 6" />
-          </svg>
-        </div>
-        <div class="contact-box__info">
-          <a href="#" class="contact-box__info--title">+251910504252</a>
-          <p class="contact-box__info--subtitle">  24/7 </p>
-        </div>
-      </div>  
-      <!-- CONTENT FOR EMAIL  -->
-      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-        <div class="contact-box__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <polyline points="3 9 12 15 21 9 12 3 3 9" />
-            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-            <line x1="3" y1="19" x2="9" y2="13" />
-            <line x1="15" y1="13" x2="21" y2="19" />
-          </svg>
-        </div>
-        <div class="contact-box__info">
-          <a href="#" class="contact-box__info--title">matthewteferi46@gmail.com</a>
-          <p class="contact-box__info--subtitle">Send me a email</p>
-        </div>
-      </div>
-      <!-- CONTENT FOR LOCATION  -->
-      <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-        <div class="contact-box__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <line x1="18" y1="6" x2="18" y2="6.01" />
-            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
-            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
-            <line x1="9" y1="4" x2="9" y2="17" />
-            <line x1="15" y1="15" x2="15" y2="20" />
-          </svg>
-        </div>
-        <div class="contact-box__info">
-          <a href="#" class="contact-box__info--title">Contact me</a>
-          <p class="contact-box__info--subtitle">w/shewa, Oromia, Ethiopia</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- START THE SOCIAL MEDIA CONTENT  -->
-  <div class="footer-sm" style="background-color: #2b0101;">
-    <div class="container">
-      <div class="row py-4 text-center text-white">
-        <div class="col-lg-12 col-md-6 mb-4 mb-md-0">
-          <a href="https://github.com/"><i class="fab fa-github"></i></a>
-          <a href="www.linkedin.com/in/matiwos-teferi-b31b46392"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/mathy.t12?igsh=eDJyOXhzZXRtdjU5"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- START THE CONTENT FOR THE CAMPANY INFO -->
-  <div class="container mt-5">
-    <div class="row text-white justify-content-center mt-3 pb-3">
-      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-        <h5 class="text-capitalize fw-bold">My approach</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
-        <p class="lh-lg">
-          <em>“Go slow to go fast" - This wisdom from Viggo Mortensen guides my work. 
-    I believe in thoughtful, careful development that ultimately saves time 
-    and creates better, more sustainable solutions..” -<strong>Viggo Mortensen</strong>–</em>
+    <!-- SECTION 1: HERO -->
+    <section class="panel hero-section" id="home">
+      <div class="hero-content">
+        <h1 class="glitch" data-text="MATIWOS TEFERI">MATIWOS TEFERI</h1>
+        <h2 class="subtitle">FULL-STACK DEVELOPER</h2>
+        <p class="bio-text">
+          Crafting digital experiences from front-end to back-end. <br>
+          Specializing in modern web technologies and basic scalable solutions.
         </p>
+        <div class="cta-group">
+          <a href="https://flowcv.com/resume/9c9sqeejwcwg" class="neon-btn">DOWNLOAD CV</a>
+          <a href="#skills" class="neon-btn secondary">EXPLORE <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <!-- START THE COPYRIGHT INFO  -->
-  <div class="footer-bottom pt-5 pb-5">
-    <div class="container">
-      <div class="row text-center text-white">
-        <div class="col-12">
-          <div class="footer-bottom__copyright">
-            &COPY; Copyright 2025 <a href="#">matthew</a> | Created by <a href="https://Matthew.com" target="_blank">matthew Developer |</a><br>
+      <div class="hero-model">
+        <!-- CSS 3D CYBER CUBE (Reliable Fallback) -->
+        <div class="cyber-cube-container">
+          <div class="cyber-cube">
+            <div class="face front">MATIWOS</div>
+            <div class="face back">HTML</div>
+            <div class="face right">JS</div>
+            <div class="face left">CSS</div>
+            <div class="face top">Java</div>
+            <div class="face bottom">Python</div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+      <div class="scroll-indicator">
+        <span>SCROLL DOWN TO EXPLORE</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
 
-<!-- BACK TO TOP BUTTON  -->
-<a href="#" class="shadow btn-primary rounded-circle back-to-top">
-  <i class="fas fa-chevron-up"></i>
-</a>
-<a href="#" class="shadow btn-secondary rounded-circle">
-  <i class="fas fa-share"></i>
-</a>
-   <!--JavaScript Post Imports-->
-    <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/model-view.js"></script>
-   <!--  <script type="text/javascript">
-      const lightbox = GLightbox({
-        'touchNavigation': true,
-        'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
-        'type': 'video',
-        'source': 'youtube', //vimeo, youtube or local
-        'width': 900,
-        'autoPlayVideos': 'true',
-});
-    
-    </script>-->
+    <!-- SECTION 2: ABOUT / BIO -->
+    <section class="panel about-section" id="about">
+      <div class="panel-title">
+        <span>01</span>
+        <h3>PROFILE_DATA</h3>
+      </div>
+      <div class="cards-container">
+        <div class="glass-card">
+          <i class="fas fa-user-astronaut"></i>
+          <h4>Who Am I?</h4>
+          <p>Understanding life, seeking truth, and valuing honesty. Passionate about music, sports, and travels.</p>
+        </div>
+        <div class="glass-card">
+          <i class="fas fa-code"></i>
+          <h4>Work Ethic</h4>
+          <p>Responsible, analytical, and detail-oriented. I focus on comprehensive problem solving and team
+            communication.</p>
+        </div>
+        <div class="glass-card">
+          <i class="fas fa-users"></i>
+          <h4>Relationships</h4>
+          <p>I value listening and practicing patience. Learning new languages and connecting with diverse people is my
+            joy.</p>
+        </div>
+        <div class="glass-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>The Student</h4>
+          <p>Self-directed learner always open to new knowledge. Networking and continuous improvement are my pillars.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SKILLS -->
+    <section class="panel skills-section" id="skills">
+      <div class="panel-title">
+        <span>02</span>
+        <h3>SYSTEM_CAPABILITIES</h3>
+      </div>
+
+      <div class="skills-content">
+        <!-- Frontend Skills -->
+        <div class="skill-category">
+          <h4 class="category-title"><i class="fas fa-laptop-code"></i> FRONT-END</h4>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-css3-alt"></i> CSS3 / SASS</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-category">
+          <h4 class="category-title"><i class="fas fa-server"></i> BACK-END</h4>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-python"></i> Python</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fas fa-fire"></i> Django</span>
+              <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-java"></i> Java</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fas fa-database"></i> MySQL</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Other -->
+        <div class="skill-category">
+          <h4 class="category-title"><i class="fas fa-tools"></i> TOOLS & MORE</h4>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-github"></i> Git / GitHub</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-react"></i> React / Next.js</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="65"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fas fa-terminal"></i> REST APIs</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-info">
+              <span><i class="fab fa-figma"></i> UI/UX Design</span>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="60"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Summary -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">TECHNOLOGIES</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">PROJECTS</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">YEARS CODING</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">CURIOSITY</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PORTFOLIO -->
+    <section class="panel portfolio-section" id="portfolio">
+      <div class="panel-title">
+        <span>03</span>
+        <h3>PROJECT_ARCHIVE</h3>
+      </div>
+      <div class="project-carousel">
+        <div class="project-card">
+          <div class="p-img" style="background-image: url('images/smartstay.png');">
+          </div>
+          <div class="p-info">
+            <h4>SMARTSTAY HOTEL</h4>
+            <p>Next-gen hospitality platform featuring AI-integrated guest services and streamlined management.</p>
+            <a href="https://github.com/metthew-t/Maty_Smartstay_Hotel" target="_blank" rel="noopener noreferrer">SEE MY PROJECT</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="p-img" style="background-image: url('images/fairness.png');">
+          </div>
+          <div class="p-info">
+            <h4>FAIRNESS TRACKER</h4>
+            <p>A collaborative tool designed to monitor and ensure equitable contribution in group project workflows.</p>
+            <a href="https://github.com/metthew-t/Group-project-fairness-tracker" target="_blank" rel="noopener noreferrer">SEE MY PROJECT</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="p-img" style="background-image: url('images/blog.png');"></div>
+          <div class="p-info">
+            <h4>BLOG MANAGEMENT SYSTEM</h4>
+            <p>High-performance Java-based Content Management System for seamless digital storytelling.</p>
+            <a href="https://github.com/metthew-t/Blog_Content_Management_System" target="_blank" rel="noopener noreferrer">SEE MY PROJECT</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="p-img" style="background-image: url('images/lms.png');">
+          </div>
+          <div class="p-info">
+            <h4>ONLINE-LMS</h4>
+            <p>Comprehensive platform for managing courses, student progress, and secure payment processing.</p>
+            <a href="https://github.com/metthew-t/Online_Learning_Management_System" target="_blank" rel="noopener noreferrer">SEE MY PROJECT</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="p-img" style="background-image: url('images/calculator.png');">
+          </div>
+          <div class="p-info">
+            <h4>CALCULATOR APP</h4>
+            <p>Sleek calculation app featuring a futuristic UI and optimized mathematical logic.</p>
+            <a href="https://github.com/metthew-t/Calculator_App_Project" target="_blank" rel="noopener noreferrer">SEE MY PROJECT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT -->
+    <section class="panel contact-section" id="contact">
+      <div class="panel-title">
+        <span>04</span>
+        <h3>ESTABLISH_UPLINK</h3>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="c-item">
+            <i class="fas fa-phone"></i>
+            <span>+251 91 050 4252</span>
+          </div>
+          <div class="c-item">
+            <i class="fas fa-envelope"></i>
+            <span>metthewsteferi@gmail.com</span>
+          </div>
+          <div class="c-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ethiopia, Oromia, Adama</span>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/metthew-t" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/Maty_1050" target="_blank" rel="noopener noreferrer" title="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/mathy.t12" target="_blank" rel="noopener noreferrer" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/251964247311" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/metthewsteferi@gmail.com" method="POST">
+          <!-- Hidden Inputs for FormSubmit -->
+          <input type="hidden" name="_subject" value="SYSTEM UPLINK: New Message from Portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="text" name="name" placeholder="IDENTITY (Name)" required>
+          <input type="email" name="email" placeholder="FREQUENCY (Email)" required>
+          <textarea name="message" placeholder="TRANSMISSION (Message)" rows="5" required></textarea>
+          <button type="submit" class="neon-btn">SEND TRANSMISSION</button>
+          <p class="quote">"Go slow to go fast." - Viggo Mortensen</p>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- GSAP Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="assets/js/main.js?v=2"></script>
 </body>
+
 </html>
